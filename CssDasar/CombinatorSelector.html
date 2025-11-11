@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /*======== ini desendant selestor=========== */
+        div h1 { /* artinya ambil semua h1 yang di dalam div*/
+            color: crimson;
+        }
+        .div h1.h1{ /* ambil semua h1 di dalam class h1 dan class div*/
+            text-transform: uppercase;
+        }
+        /*============================================ */
+        /*======== ini child selestor=========== */
+        div > h1 { /* ambil semua child h1 dari div*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .div > .h1 { /*ambil semua child class h1 dari parent class div*/
+            background-color: chartreuse;
+        }
+        /*============================================ */
+        /*======== ini adjacent sibling selestor=========== */
+        div + h1 { /*ambil 1 h1 yang sejajar dengan div */
+            background-color: aqua;
+        }
+        .div + .h1 {
+            color: yellow;
+        }
+        /*============================================ */
+        /*======== ini general sibling selestor=========== */
+        div ~ h1 { /*ambil semua h1 yang sejajar dengan div */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <h1 class="h1">ini div ygy</h1>
+        <p class="h1">ini p di class h1</p>
+        <section>
+            <h1 class="h1">ini section di dalam div</h1>
+        </section>
+    </div>
+    <h1 class="h1">ini diluar div</h1>
+    <h1 class="h1">ini diluar div2</h1>
+</body>
+</html>

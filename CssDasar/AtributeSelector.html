@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribut selector</title>
+    <style>
+        /* atribute] selector */
+        a[target] { /*mengecek apakah di a ada atribut target*/
+            color: crimson;
+        }
+
+        /* atribute = 'value'] selector */
+        a[target = "_blank"] { /*mengecek aapakah di a ada atribut target dan ber value _blank*/
+            color: green;
+        }
+        
+        /* atribute ~= 'value'] selector */
+        p[title ~= 'belajar'] { /*mengecek apakah di p ada atribut title dan ada value KATA belajar*/
+            color: red;
+        }
+
+        /* atribute |= 'value'] selector */
+        h1[title |= 'belajar'] { /*akan berpengaruh jika h1 ada atribut title dan MEMILIKI VALUE HANYA BELAJAR ATAU BELAJAR-....*/
+            font-size: medium;
+        }
+        
+        /* atribute ^= 'value'] selector */
+        h1[title ^= 'belajar'] { /*akan berpengaruh jika h1 memiliki atribut title dan MEMILIKI VALUE YG DIAWALI BELAJAR */
+            color: blue;
+        }
+        
+        /* atribute $= 'value'] selector */
+        h1[title $= 'belajar'] { /*akan berpengaruh jika h1 memiliki atribut title dan MEMILIKI VALUE YG DIAKHIRI BELAJAR */
+            color: green;
+        }
+        
+        /* atribute *= 'value'] selector */
+        h1[title *= 'belajar'] { /*akan berpengaruh jika h1 memiliki atribut title dan MEMILIKI VALUE YG MENGGUNAKAN KATA BELAJAR */
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+     <a href='' target="_blank"> atribut selector 1</a>
+     <a href='' target="_blank"> atribut selector 2</a>
+     <a href='' target="_blank"> atribut selector 3</a>
+     <br>
+     <a href='' target="_blank">atribut value 1</a>
+     <a href='' target="_self">atribut value 2</a>
+     <a href='' target="_blank">atribut value 3</a>
+     <br>
+     <p title="belajar pemrograman">paragraft 1</p>
+     <p title="belajar koding">paragraft 2</p>
+     <p title="belajaraljabar">paragraft 3</p>
+     <br>
+     <h1 title="belajar-pemrograman">dipilih</h1>
+     <h1 title="belajar">dipilih</h1>
+     <h1 title="belajarpemrograman">tidak dipilih</h1>
+     <h1 title="pemrogramanbelajar">tidak dipilih</h1>
+    
+</body>
+</html>
