@@ -1,0 +1,29 @@
+@layer a {
+    body {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
+}
+
+@layer b {
+    body {
+        width: 500px;
+        height: 500px;
+        background-color: purple;
+    }
+}
+@layer c {
+    body {
+        width: 500px;
+        height: 500px;
+        background-color: green;
+    }
+}
+@layer d {
+    body {
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+    }
+}
