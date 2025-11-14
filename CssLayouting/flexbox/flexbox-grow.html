@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flexbox grow</title>
+
+        <style>
+        .container {
+            display: flex;
+        }
+
+        .content {
+            background-color: crimson;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .small {
+            flex-grow: 1;
+        }
+
+        .large {
+            flex-grow: 2;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="content small">A</h1>
+            <h1 class="content large">B</h1>
+            <h1 class="content small">C</h1>
+            <h1 class="content large">D</h1>
+        </div>
+
+    </body>
+</html>

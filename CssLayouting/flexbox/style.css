@@ -1,0 +1,24 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+.content {
+    width: 300px;
+    height: 200px;
+    counter-reset: unset;
+    background-color: aqua;
+    border: solid 3px blue;
+    margin: 5px;
+    padding: 5px;
+    counter-increment: judul;
+}
+
+h1::after {
+    content: ' ' counter(judul);
+}
