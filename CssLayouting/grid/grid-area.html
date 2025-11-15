@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid area</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 100px auto 100px;
+                grid-template-rows: 100px auto 70px;
+                grid-template-areas:
+                    "nav nav nav"
+                    ". main ."
+                    "footer footer footer";
+            }
+
+            .navbar {
+                background-color: crimson;
+                margin: 5px;
+                padding: 5px;
+                text-align: center;
+                grid-area: nav;
+            }
+
+            .main {
+                background-color: crimson;
+                margin: 5px;
+                padding: 5px;
+                grid-area: main;
+                text-align: center;
+            }
+
+            .footer {
+                background-color: crimson;
+                margin: 5px;
+                padding: 5px;
+                grid-area: footer;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1>Welkom to game pripayer</h1>
+        </nav>
+        <main class="main">
+            <h2>pripayer game hd ml burik wleee😛</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                impedit laudantium illum rem consequuntur? Suscipit quisquam
+                blanditiis eius repellendus distinctio amet quia itaque
+                assumenda nostrum. Suscipit tempora amet vel optio.</p>
+        </main>
+        <footer class="footer">
+            <h4>ml cupu ygy</h4>
+        </footer>
+
+    </body>
+</html>
