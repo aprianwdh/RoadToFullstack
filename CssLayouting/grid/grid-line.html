@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid line</title>
+        <style>
+            body {
+                background-color: aqua;
+                display: grid;
+                grid-template-columns: [kolom1] 80px [kolom2] auto [kolom3] 80px;
+                grid-template-rows: [baris1] 50px [baris2] auto [baris3] 50px [kolom4];
+            }
+            
+            .navbar {
+                background-color: blue;
+                grid-column-start: kolom1;
+                grid-column-end: kolom4;
+                grid-row-start: baris1;
+                grid-row-end: baris2;
+            }
+
+            .main {
+                background-color: blue;
+                margin: 5px;
+                padding: 5px;
+                grid-column-start: kolom2;
+                grid-column-end: kolom3;
+                grid-row-start: baris2;
+                grid-row-end: baris3;
+            }
+            
+            .footer {
+                background-color: blue;
+                margin: 5px;
+                padding: 5px;
+                grid-column-start: kolom1;
+                grid-column-end: kolom4;
+                grid-row-start: baris3;
+                grid-row-end: baris4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content"></div>
+        <nav class="navbar">
+            <h1>Selamat Datang di Apriwws</h1>
+        </nav>
+        <main class="main">
+            <h2>Berita hari ini seorang mahasiswa sigma</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                aspernatur illo quae, consequatur mollitia a praesentium, itaque
+                repellat saepe obcaecati repellendus officiis odio corrupti esse
+                pariatur veritatis! Facere, perspiciatis corporis. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Ullam quos, dicta
+                voluptate laborum debitis eum temporibus, aut voluptatem quasi
+                cumque minus ea asperiores unde. Delectus ducimus esse
+                voluptatem eligendi numquam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Eveniet eaque, odit modi ex
+                voluptatem alias harum nobis, animi accusantium enim, doloremque
+                qui! Laborum, rem alias? Porro nam nemo eius sit?
+                Animi nemo perferendis quam aut distinctio quos sed fuga hic
+                modi in! Ratione cupiditate autem facilis aut odio pariatur
+                dolorem animi consequatur asperiores exercitationem, non
+                inventore possimus, distinctio vero officiis.
+                Numquam modi quae non? In, odio quisquam aliquam, repellat
+                praesentium inventore aliquid perferendis adipisci voluptas illo
+                iure autem blanditiis consectetur pariatur, eius itaque
+                excepturi sunt corrupti molestiae suscipit impedit tempore!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus, expedita. Similique sit laudantium et earum. Nobis
+                distinctio corrupti ipsa aut autem optio. Asperiores quo nostrum
+                ipsum distinctio excepturi, obcaecati eaque.
+                Eaque, sint voluptatem? Explicabo, quas. Reprehenderit odit esse
+                velit pariatur nisi magnam consequuntur illo, architecto
+                repudiandae totam, enim provident harum non ipsa veritatis
+                mollitia perferendis sint incidunt inventore. Magnam, soluta?
+                Soluta nostrum iste dolore provident eos molestias sit, ullam
+                ducimus iusto hic consequatur praesentium libero ea? Eum dolor
+                veritatis iste quis error cupiditate laboriosam architecto
+                possimus. Qui pariatur nemo cumque.
+                Pariatur in mollitia, molestias cum ipsum nihil fuga,
+                voluptatibus ipsa ullam tempore voluptates odit alias ab
+                blanditiis quae sunt eius eaque non minus id, libero eum quia
+                rerum? Sequi, repudiandae?
+                Explicabo debitis expedita in ratione sit iure rem ab, nulla
+                facilis reprehenderit dicta quaerat aliquid, sed ad perferendis
+                delectus quia sunt eum maiores tenetur qui quibusdam, corrupti
+                saepe? Dolor, facere!
+                Sit corporis iste officia vero dignissimos quae nisi! Aut,
+                adipisci! Fuga, corporis accusantium? Esse illo voluptatum
+                dolorem provident veritatis iusto quia quos, numquam magnam
+                sapiente consectetur dolore, odio eum hic.
+                Suscipit accusamus, cumque magni quibusdam nulla quam
+                repellendus, iusto laboriosam neque minima, voluptatum
+                perferendis ea qui fugiat laudantium! Aliquam nam officiis totam
+                ex ad adipisci incidunt cupiditate qui corporis. Deserunt.
+                Nam, quasi fuga blanditiis soluta nemo, provident voluptate
+                dolore impedit quas quos velit fugit libero ducimus praesentium?
+                Asperiores consequuntur eveniet, architecto officiis deleniti
+                necessitatibus nisi hic inventore fugiat ipsa vel?
+                Velit minus, ad animi recusandae, repudiandae dolor blanditiis
+                provident perferendis totam harum laudantium a perspiciatis.
+                Veritatis, porro itaque fuga doloribus consequuntur, numquam
+                voluptas nesciunt alias aut, voluptatem nihil facilis eum.
+                Magni natus aperiam iusto, beatae sit neque assumenda culpa
+                doloremque asperiores fuga illum id corporis, magnam impedit?
+                Possimus, pariatur veritatis expedita, mollitia provident
+                aliquid aspernatur voluptates inventore quidem velit nihil!
+            </p>
+        </main>
+        <footer class="footer">
+            <p>website ini dibuat dengan semangat ygy</p>
+        </footer>
+
+    </body>
+</html>
