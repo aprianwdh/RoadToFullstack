@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid justify</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            background-color: aqua;
+            gap: 5px;
+            padding: 5px;
+            justify-content: space-around;
+            
+        }
+
+        .content{
+            background-color: crimson;
+            text-align: center;
+            border: 3px solid black;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="content">1</p>
+        <p class="content">2</p>
+        <p class="content">3</p>
+        <p class="content">4</p>
+        <p class="content">5</p>
+        <p class="content">6</p>
+        <p class="content">7</p>
+        <p class="content">8</p>
+        <p class="content">9</p>
+    </div>
+    
+</body>
+</html>
