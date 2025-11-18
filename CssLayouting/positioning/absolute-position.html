@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>absolute positioning</title>
+        <style>
+            .content {
+                background-color: aqua;
+                margin: 3px;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+            .content1 {
+                position: static; /*jika static maka tidak bisa diubah*/
+                top: 20px;
+                left: 20px;
+            }
+            .content2 {
+                position: absolute; /*di akan pindah berdasarkan posisi parentnya*/
+                top: 20px;
+                left: 20px;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content content1">content1</div>
+        <div class="content content2">content2</div>
+        <div class="content content3">content3</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit
+            porro, nam vero quisquam, neque rerum est quae cupiditate expedita
+            ipsa nesciunt fuga libero minus impedit facere totam ullam
+            debitis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit
+            porro, nam vero quisquam, neque rerum est quae cupiditate expedita
+            ipsa nesciunt fuga libero minus impedit facere totam ullam
+            debitis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit
+            porro, nam vero quisquam, neque rerum est quae cupiditate expedita
+            ipsa nesciunt fuga libero minus impedit facere totam ullam
+            debitis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit
+            porro, nam vero quisquam, neque rerum est quae cupiditate expedita
+            ipsa nesciunt fuga libero minus impedit facere totam ullam
+            debitis?</p>
+
+    </body>
+</html>
