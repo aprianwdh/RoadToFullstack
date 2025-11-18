@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>relative positioning</title>
+        <style>
+            .content {
+                background-color: aqua;
+                margin: 3px;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+            .content1 {
+                position: static; /*jika static maka tidak bisa diubah*/
+                top: 20px;
+                left: 20px;
+            }
+            .content2 {
+                position: relative; /*bis diubah*/
+                top: 200px;
+                left: 200px;
+                z-index: -1; /*akan mengatur layer z ke -1 (layer deafultnya auto atau 0)*/
+                background-color: blueviolet;
+            }
+            p{
+                color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content content1">content1</div>
+        <div class="content content2">content2</div>
+        <div class="content content3">content3</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            at maxime ex voluptas! Harum quas blanditiis a ullam ea.
+            Reprehenderit minus inventore perferendis ipsam distinctio magni
+            cupiditate blanditiis facere maiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            at maxime ex voluptas! Harum quas blanditiis a ullam ea.
+            Reprehenderit minus inventore perferendis ipsam distinctio magni
+            cupiditate blanditiis facere maiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            at maxime ex voluptas! Harum quas blanditiis a ullam ea.
+            Reprehenderit minus inventore perferendis ipsam distinctio magni
+            cupiditate blanditiis facere maiores?</p>
+
+    </body>
+</html>
