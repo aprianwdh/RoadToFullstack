@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIpe data number</title>
+  </head>
+  <body>
+    <p class="nilai"></p>
+    <p class="nilai"></p>
+    <p class="nilai"></p>
+    <p class="nilai"></p>
+
+    <script>
+      const p = document.querySelectorAll(".nilai");
+      // angka desimal
+      // document.querySelector("p").innerHTML = 100
+      p[0].innerHTML = 100;
+      // angka biner
+      // document.querySelector("p").innerHTML = 0b1111
+      p[1].innerHTML = 0b111;
+      // angka octal
+      p[2].innerHTML = 0o123;
+      // angka hexa
+      p[3].innerHTML = 0x123;
+    </script>
+  </body>
+</html>
