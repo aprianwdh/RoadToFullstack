@@ -8,6 +8,11 @@
   <body>
     <h1></h1>
     <h1></h1>
+    <p></p>
+    <h2 class="tab"></h2>
+    <h2 class="enter"></h2>
+    <h2 class="petik-dua"></h2>
+    <h2 class="petik-satu"></h2>
 
     <script>
       const string = document.querySelectorAll("h1");
@@ -15,6 +20,14 @@
       // contoh string
       string[0].innerHTML = "Hello World";
       string[1].innerHTML = "ROAD TO FULLSTACK";
+
+      // menambahkan string
+      document.querySelector("p").innerHTML = "aku " + "anak " + "sehat";
+
+      // sequence escape
+      document.querySelector(".tab").innerHTML = " aku  &nbsp adalah fullstack dev"
+      document.querySelector(".enter").innerHTML = "wlwlwl <br> wdwdwdwdd"
+
     </script>
   </body>
 </html>
