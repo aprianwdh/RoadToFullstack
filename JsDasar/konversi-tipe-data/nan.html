@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIpe data nan</title>
+  </head>
+  <body>
+    <script>
+      // mentolerir keslahan kalau di belakanh
+      console.log(parseInt("1.2hanung"));
+      console.log(parseFloat("1.2kontol"));
+
+      //   tidak boleh ada kselahan sedikitpun
+      console.log(Number("1.2hanung"));
+
+      //   bilanagn apapaun yang dioperasikan dengan nan akan menghasilkan nan
+      let num1 = parseInt("akud");
+      console.log(num1 + 100);
+    </script>
+  </body>
+</html>
