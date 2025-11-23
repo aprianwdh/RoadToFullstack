@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi INT</title>
+  </head>
+  <body>
+    <script>
+      let data1 = 1;
+      let data2 = "99";
+
+      // jika tanpa dirubah maka akan di anggap penjumlahan antar string
+      console.log(`hasil dari ${data1} ${data2} adalah ${data1 + data2}`);
+
+      // maka harus di konversi
+      data2 = parseInt(data2);
+      console.log(`hasil dari ${data1} ${data2} adalah ${data1 + data2}`);
+
+      //   konversi ke int akan mengabaikan koma dibeakang data
+      let data3 = "99.9";
+      data3 = parseInt(data3);
+      console.log(data3);
+    </script>
+  </body>
+</html>
