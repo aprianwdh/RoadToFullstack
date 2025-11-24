@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operasi array</title>
+  </head>
+  <body>
+    <script>
+      let nama = ["aku", "brembo"];
+      console.table(nama);
+
+      // mengambil data tertentu
+      console.log(nama[1]);
+
+      // mengambil panjang array
+      console.log(nama.length);
+
+      //merubah data
+      nama[0] = "aku pertama";
+      console.table(nama);
+
+      //menghapus daata
+      delete nama[0];
+      console.table(nama);
+    </script>
+  </body>
+</html>
