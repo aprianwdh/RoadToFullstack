@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COnfirm popup</title>
+  </head>
+  <body>
+    <script>
+      let konfirmasi = confirm("yakin masuk bapak ?");
+      if (konfirmasi) {
+        let nama = prompt("masukkan nama:");
+        let pangkat = prompt("masukkan pangkat");
+
+        if (pangkat === "sigma1") {
+          alert(`HORMAAAAT bapak ${nama} bin ${pangkat}`);
+        } else if (pangkat === "sigma2") {
+          alert(`Okelah ${nama} bin ${pangkat}`);
+        } else {
+          alert("idih najisnyo");
+        }
+      } else {
+        alert("Cupuuuuuu brok skip");
+      }
+    </script>
+  </body>
+</html>
