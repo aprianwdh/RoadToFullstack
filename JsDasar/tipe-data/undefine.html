@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefine</title>
+  </head>
+  <body>
+    <script>
+      // undefine ketika tipe data belum diberi value
+      let data;
+      //   data = 1;
+
+      if (data === undefined) {
+        document.writeln("data undefine");
+      } else {
+        document.writeln("data define");
+      }
+
+      document.writeln("<br>");
+
+      //undefine pada array
+      let arr = ["sigma", "gyat", "okii"];
+
+      if (arr[2] === undefined) {
+        document.writeln("Array undefine");
+      } else {
+        document.writeln("Array define");
+      }
+
+      document.writeln("<br>");
+
+      //   undefine pada object
+      let object = {};
+
+      if (object.nama === undefined) {
+        document.writeln("object undefine");
+      } else {
+        document.writeln("object define");
+      }
+    </script>
+  </body>
+</html>
