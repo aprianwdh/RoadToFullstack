@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nulish operator</title>
+  </head>
+  <body>
+    <script>
+      // tanpa nulish operator
+      let parameter = "inik";
+      let data = parameter;
+
+      if (data === null || data === undefined) {
+        data = "nilai default";
+      }
+
+      document.writeln(data);
+      document.writeln("<br>");
+
+      //   dengan nulish operator
+      parameter = undefined;
+      data = parameter ?? "nilai default";
+      document.writeln(data);
+    </script>
+  </body>
+</html>
