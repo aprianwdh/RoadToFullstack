@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenary Operator</title>
+  </head>
+  <body>
+    <script>
+      // versi tanpa tenary operator
+      let data = 9;
+      let lulus;
+      if (data >= 9) {
+        lulus = true;
+      } else {
+        lulus = true;
+      }
+
+      document.writeln(`hasil ujian kamu adalah ${lulus} <br>`);
+
+      //   versi dengan tenary operator
+      data = 7;
+      lulus = data >= 9 ? (data = true) : (data = false);
+      document.writeln(`hasil ujian kamu adalah ${lulus} <br>`);
+    </script>
+  </body>
+</html>
