@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>falshy dan truthy</title>
+  </head>
+  <body>
+    <script>
+      // falshy
+      let data = false; //false bollen biasa
+      document.writeln(data ? "true" : "false <br>");
+
+      data = 0; //number 0 aatau -0
+      document.writeln(data ? "true" : "false <br>");
+
+      data = NaN; //not a number
+      document.writeln(data ? "true" : "false <br>");
+
+      data = ""; // string kosong
+      document.writeln(data ? "true" : "false <br>");
+
+      data = undefined; //undefine
+      document.writeln(data ? "true" : "false <br>");
+
+      data = null; //null
+      document.writeln(data ? "true" : "false <br>");
+
+      //   truthy
+      // secara umum semua data selain falsy adalah truty
+      // kecuali
+      data = []; //array kosong
+      document.writeln(data ? "true <br>" : "false");
+      data = {}; //object kosong
+      document.writeln(data ? "true <br>" : "false");
+      data = " "; //string berisi spasi
+      document.writeln(data ? "true <br>" : "false");
+    </script>
+  </body>
+</html>
