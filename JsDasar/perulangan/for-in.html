@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for in</title>
+  </head>
+  <body>
+    <script>
+      // contoh for in pada array (akan mengembalikan index)
+      let arr = ["aprian", "widhi", "wibowo"];
+      for (i in arr) {
+        document.writeln(i);
+        document.writeln("<br>");
+      }
+
+      // contoh for in pada object (akan mengembalikan property)
+      let object = {
+        firstName: "Aprian",
+        secondName: "widhi",
+        lastName: "wIbowo",
+      };
+      for (x in object) {
+        document.writeln(x);
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>
