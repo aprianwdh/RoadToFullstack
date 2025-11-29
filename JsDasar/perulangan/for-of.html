@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for of</title>
+  </head>
+  <body>
+    <script>
+      // contoh for of pasa array (akan mengembaikan value)
+      let arr = ["klumpit", "San Francisco", "Dubai"];
+      for (let i of arr) {
+        document.writeln(i);
+        document.writeln("<br>");
+      }
+
+      //contoh penggunaan pada string
+      let string = "Kelumpit predt";
+      for (let x of string) {
+        document.writeln(x);
+        document.writeln("<br>");
+      }
+
+      //pada object sedikit berbeda
+      let anime = {
+        namaAnime: "Opm S3",
+        ratingAnime: "peak",
+      };
+
+      for (let [key, value] of Object.entries(anime)) {
+        document.writeln(`${key} = ${value}`);
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>
