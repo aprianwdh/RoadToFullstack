@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>break dan continue</title>
+  </head>
+  <body>
+    <script>
+      {
+        //contoh penggunaan break
+        let i = 0;
+        while (true) {
+          i++;
+          document.writeln(`perulangan ke ${i}`);
+
+          if (i >= 5) {
+            break;
+          }
+        }
+
+        for (let x = 0; x <= 6; x++) {
+          if (x % 2 === 0) {
+            continue;
+          } else {
+            document.writeln(x);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
