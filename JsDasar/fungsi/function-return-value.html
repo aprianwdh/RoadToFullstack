@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function return value</title>
+  </head>
+  <body>
+    <script>
+      function penjumlahan(angkaPertama, angkaKedua) {
+        let hasil = angkaKedua + angkaPertama;
+        return hasil;
+      }
+      //return lebih dari satu
+      function nilaiMahasiswa(nilai) {
+        if (nilai > 90) {
+          return "A";
+        } else {
+          return "z";
+        }
+      }
+
+      let hasil = penjumlahan(12, 20);
+      let nilai = nilaiMahasiswa(0);
+      document.writeln(hasil);
+      document.writeln(nilai);
+    </script>
+  </body>
+</html>
