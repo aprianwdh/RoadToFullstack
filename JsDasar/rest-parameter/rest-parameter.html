@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rest parameter</title>
+  </head>
+  <body>
+    <script>
+      function tambahJUmlahBarang(namaBarang, ...nilai) {
+        let jumlahBarang = 0;
+        for (i of nilai) {
+          jumlahBarang += i;
+        }
+        document.writeln(`total ${namaBarang} adalah ${jumlahBarang}`);
+      }
+
+      document.writeln(tambahJUmlahBarang("Apel", 10, 20, 30));
+    </script>
+  </body>
+</html>
