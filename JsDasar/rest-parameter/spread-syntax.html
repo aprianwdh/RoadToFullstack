@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spread syntaxs</title>
+  </head>
+  <body>
+    <script>
+      function tambahJUmlahBarang(namaBarang, ...nilai) {
+        let jumlahBarang = 0;
+        for (i of nilai) {
+          jumlahBarang += i;
+        }
+        document.writeln(`total ${namaBarang} adalah ${jumlahBarang}`);
+      }
+
+      //digunakan ketika kita ingin menambahkan array sebagai parameter
+      let arr1 = [10, 20, 30, 40, 50];
+      document.writeln(tambahJUmlahBarang("Apel", ...arr1));
+    </script>
+  </body>
+</html>
