@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>global scope</title>
+  </head>
+  <body>
+    <script>
+      //ini global scope
+      let counter = 10;
+
+      function increment() {
+        // global scope dapat digunakan dimanapun
+        return counter++;
+      }
+
+      increment();
+      increment();
+      document.writeln(counter);
+    </script>
+  </body>
+</html>
