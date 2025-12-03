@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function* dataNama() {
+        yield "sigma";
+        yield "alpa";
+        yield "omega";
+      }
+
+      data = dataNama();
+      document.writeln(data.next().value);
+      document.writeln(data.next().value);
+      document.writeln(data.next().value);
+
+      function* angkaGenap(value) {
+        for (let x = 1; x <= value; x++) {
+          if (x % 2 === 0) {
+            yield x;
+          }
+        }
+      }
+
+      const angka = angkaGenap(100);
+      for (i of angka) {
+        document.writeln(i);
+      }
+    </script>
+  </body>
+</html>
