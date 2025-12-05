@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>syncronus callback</title>
+  </head>
+  <body>
+    <script>
+      // contoh oenggunaan callback di syncronus
+
+      function tampilkanPesan(callback) {
+        const pesan = prompt("masukkan pesan anda");
+        alert(callback(pesan));
+      }
+
+      //panggul function
+      tampilkanPesan((nama) => `namaku ${nama}`);
+      tampilkanPesan((umur) => `umurku ${umur} sekian masbor `);
+    </script>
+  </body>
+</html>
