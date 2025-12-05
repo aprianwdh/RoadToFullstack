@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise</title>
+  </head>
+  <body>
+    <script>
+      // promise adalah object yang merepresentasikan keberhasilan / kegagalan
+      // sebuah event yang asyncronus di masa depan
+
+      // janji (terpenuhi / tidak terpenuhi)
+      // status (fulfiled / rejected / pending)
+      // callback (resolve / reject / finally)
+      // aksi (then / catch)
+
+      //   CONTOH 1
+      const state = new Promise((resolve, reject) => {
+        let kondisi = false;
+
+        if (kondisi) {
+          resolve("berhasil maseh");
+        } else {
+          reject("gagal maseh");
+        }
+      });
+
+      state
+        .then((berhasil) => console.log(berhasil))
+        .catch((gagal) => console.log(gagal));
+
+      //   CONTOH 2
+      const state2 = new Promise((resolve, reject) => {
+        let status = true;
+        if (status) {
+          setTimeout(() => {
+            resolve("berhasil melekukan tugas");
+          }, 2000);
+        } else {
+          setTimeout(() => {
+            reject("gagal melakukan tugas");
+          }, 2000);
+        }
+      });
+
+      //   console.log(
+      //     state2.then(() => {
+      //       console.log(state2);
+      //     })
+      //   );
+
+      state2
+        .finally(() => console.log("loading selesai"))
+        .then((berhasil) => {
+          console.log(`acc status : ${berhasil}`);
+        })
+        .catch((gagal) => {
+          console.log(`acc status : ${gagal}`);
+        });
+    </script>
+  </body>
+</html>
