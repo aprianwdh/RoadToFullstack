@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise all</title>
+  </head>
+  <body>
+    <script>
+      const data1 = new Promise((resolve, reject) => {
+        const staus = true;
+        if (staus) {
+          setTimeout(() => {
+            resolve("Suksess data 1");
+          });
+        } else {
+          setTimeout(() => {
+            "gagal data 1";
+          });
+        }
+      });
+
+      const data2 = new Promise((resolve, reject) => {
+        const staus = true;
+        if (staus) {
+          setTimeout(() => {
+            resolve("Suksess data 2");
+          });
+        } else {
+          setTimeout(() => {
+            "gagal data 2";
+          });
+        }
+      });
+
+      Promise.all([data1, data2]).then((berhasil) => console.log(berhasil));
+    </script>
+  </body>
+</html>
